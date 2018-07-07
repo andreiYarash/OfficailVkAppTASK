@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import VK_ios_sdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

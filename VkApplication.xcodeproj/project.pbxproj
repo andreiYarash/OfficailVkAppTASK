@@ -16,6 +16,7 @@
 		A9F7DB5520F15A2000F870AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F7DB5420F15A2000F870AC /* Assets.xcassets */; };
 		A9F7DB5820F15A2000F870AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F7DB5620F15A2000F870AC /* LaunchScreen.storyboard */; };
 		A9F7DB6320F15A2000F870AC /* VkApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7DB6220F15A2000F870AC /* VkApplicationTests.swift */; };
+		A9F7DB7220F15F5800F870AC /* VK_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F7DB7120F15F5800F870AC /* VK_ios_sdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		A9F7DB5E20F15A2000F870AC /* VkApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F7DB6220F15A2000F870AC /* VkApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkApplicationTests.swift; sourceTree = "<group>"; };
 		A9F7DB6420F15A2000F870AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F7DB7120F15F5800F870AC /* VK_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VK_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEAECC9DCAA6AFE3D6A2B30 /* Pods-VkApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkApplicationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkApplicationTests/Pods-VkApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE1A0210E92358EA1B82995B /* Pods-VkApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VkApplicationTests/Pods-VkApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE521556F157C5041345773F /* Pods_VkApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VkApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F7DB7220F15F5800F870AC /* VK_ios_sdk.framework in Frameworks */,
 				99F83EA272D729B028F4A7C8 /* Pods_VkApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +74,7 @@
 		8B1FF8040DD37F3872F101CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9F7DB7120F15F5800F870AC /* VK_ios_sdk.framework */,
 				264BC74CB1E16DADB6450B06 /* Pods_VkApplication.framework */,
 				EE521556F157C5041345773F /* Pods_VkApplicationTests.framework */,
 			);
@@ -506,7 +510,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DMUCUY464;
 				INFOPLIST_FILE = VkApplication/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndreiYarash.VkApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -522,7 +529,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DMUCUY464;
 				INFOPLIST_FILE = VkApplication/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndreiYarash.VkApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -539,7 +549,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DMUCUY464;
 				INFOPLIST_FILE = VkApplicationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndreiYarash.VkApplicationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -557,7 +571,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DMUCUY464;
 				INFOPLIST_FILE = VkApplicationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndreiYarash.VkApplicationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
