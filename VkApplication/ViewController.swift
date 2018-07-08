@@ -1,6 +1,7 @@
 import Foundation
 import VK_ios_sdk
 class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
+    
     fileprivate let vk_Token:String = "ca7f26a2dd5fcc439548accfe8cd76ce13a0fcbefc8b5a684850586f10e32b2d843ea5f94413ecbcbd001"
     
     let instanceVK = VKSdk.initialize(withAppId: "6627138")
@@ -8,7 +9,8 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
         
        self.present(controller!, animated: true, completion: nil)
         
-        //Run safari!!!
+                        //Run Safari
+        
 //                if (self.presentedViewController != nil){
 //                    self.dismiss(animated: true) {
 //                        self.present(controller!, animated: true, completion: {
@@ -29,54 +31,49 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
     
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
      
-        guard (result.token.accessToken) != nil else{
-            print("ddfdf")
-            return
-        }
-     print(result.token.accessToken!)
+        guard let tokinKeyIn = result.token.accessToken else{return}
+        print(tokinKeyIn)
     
     }
 
-    
     func vkSdkUserAuthorizationFailed() {
-        print("erroro authorized!")
+        print("error authorized!")
+    }
+    
+    func prepareVkServices(){
+        let scopePermissions = ["email", "friends", "wall", "offline", "photos", "notes"]
+        
+        VKSdk.wakeUpSession(["email","offline","friends"]) { (state, err) in
+            if state == VKAuthorizationState.authorized{
+                VKSdk.forceLogout()
+                print("yes we go")
+            }else{
+                print("continue working!")
+            }
+            
+            if VKSdk.vkAppMayExists() == true{
+                //If we have app
+                VKSdk.authorize(scopePermissions, with: .unlimitedToken)
+                
+            }else{
+                //if we  dont have VK App
+                VKSdk.authorize(scopePermissions, with:[.disableSafariController,.unlimitedToken])
+            }
+        }
+        
     }
     
    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let scopePermissions = ["email", "friends", "wall", "offline", "photos", "notes"]
-        VKSdk.wakeUpSession(["email","offline","friends"]) { (state, err) in
-            if state == VKAuthorizationState.authorized{
-                VKSdk.forceLogout()
-                print("yes go")
-            }else{
-                print("No,error:")
-            }
-            
-            if VKSdk.vkAppMayExists() == true{
-                VKSdk.authorize(scopePermissions, with: .unlimitedToken)
-                
-            }else{
-                VKSdk.authorize(scopePermissions, with:[.disableSafariController,.unlimitedToken])
-            }
-        }
-        
-        
-        
+        prepareVkServices()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Delegates
         instanceVK?.register(self)
         instanceVK?.uiDelegate = self
-        
-      
-        
- 
-      
     }
 }
 
