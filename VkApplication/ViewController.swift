@@ -22,7 +22,6 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
 //                        print("open safari!")
 //                    }
 //                }
-//
     }
     
     func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
