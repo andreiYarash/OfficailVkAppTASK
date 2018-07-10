@@ -1,14 +1,16 @@
-import Foundation
+import UIKit
 import VK_ios_sdk
+
 class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
+    
+    @IBAction func exitVkAccount(_ sender: Any) {
+        VKSdk.forceLogout()
+    }
+    
     @IBOutlet weak var userName: UILabel!
     
-    fileprivate let vk_Token:String = "ca7f26a2dd5fcc439548accfe8cd76ce13a0fcbefc8b5a684850586f10e32b2d843ea5f94413ecbcbd001"
+    private let instanceVK = VKSdk.initialize(withAppId: "6627138")
     
-    let instanceVK = VKSdk.initialize(withAppId: "6627138")
-    
-    var instanceParsingData:VkApiMethodGetMethod = VkApiMethodGetMethod()
-
     func vkSdkShouldPresent(_ controller: UIViewController!) {
         
        self.present(controller!, animated: true, completion: nil)
@@ -21,15 +23,20 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
 
     
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
-        print(result.token.expiresIn)
+        let vkLogic = VkLogic()
+        
         if result.token.userId != nil {
+            DispatchQueue.main.async {
+                
             
-        self.instanceParsingData.tokenKey = result.token.accessToken
-            let dataDecoding = instanceParsingData.requestData()
-        self.userName.text = dataDecoding?.response.last_name
-            print(dataDecoding?.response.first_name)
+            guard let tokenKey = result.token.accessToken else{return}
+            vkLogic.requestUserData(tokenKey:tokenKey)
+            vkLogic.requestWallRecoders(tokenKey: tokenKey)
+            }
         }
         
+        
+       print("Instances:\(vkLogic.wallData)")
     
     }
 
@@ -42,7 +49,7 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
         
         VKSdk.wakeUpSession(["email","offline","friends"]) { (state, err) in
             if state == VKAuthorizationState.authorized{
-                VKSdk.forceLogout()
+                //VKSdk.forceLogout() // removes cookies vk.com
                 print("yes we go")
             }else{
                 print("continue working!")
@@ -57,11 +64,19 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
                 VKSdk.authorize(scopePermissions, with:[.disableSafariController,.unlimitedToken])
             }
         }
+    }
+    @IBAction func signIn(_ sender: UIButton) {
+        self.prepareVkServices()
+        if VKSdk.isLoggedIn(){
+           return
+        }else{
+            self.prepareVkServices()
+        }
         
     }
     
-
-   
+  
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +84,6 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate{
         //Delegates
         instanceVK?.register(self)
         instanceVK?.uiDelegate = self
-        prepareVkServices()
+       // prepareVkServices()
     }
 }
-
