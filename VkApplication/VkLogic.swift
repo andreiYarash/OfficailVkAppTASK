@@ -45,18 +45,17 @@ final class VkLogic{
             DispatchQueue.main.async {
                 guard let data = data else{return}
                 
-                
-                guard err == nil else{
+    guard err == nil else{
                     print("Error in URLSesion")
                     return
-                }
+                            }
                 
-                let jsonDecoder = JSONDecoder()
-                
-                do{
+let jsonDecoder = JSONDecoder()
+               
+    do{
                     let result = try jsonDecoder.decode(LogicGetJsonData.self, from: data)
                     completionHandler(result,nil)
-                    
+                   
                     
                 } catch{
                     print("Error in DO scope")

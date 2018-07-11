@@ -37,9 +37,6 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSafariVie
                 
                 print("array of data!!! :\(self.resultArray)")
             }
-            self.vkLogic.requestWallRecoders(tokenKey: tokenKey) { (data, err) in
-                print("Items IS\(data?.response?.items) ")
-            }
                
         }else{
             print("error")

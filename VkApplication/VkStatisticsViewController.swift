@@ -34,12 +34,9 @@ class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITable
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-       
         return ssd.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
        cell?.textLabel?.text = self.ssd[indexPath.row]
         
@@ -60,22 +57,22 @@ class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITable
         vkLogic.requestUserData(tokenKey: VKSdk.accessToken().accessToken) { (data, err) in
             let userData = data?.response[0]
             self.userNameAndSurname.text = "\(userData!.first_name!) \(userData!.last_name!)"
+            
         }
     }
     
     func prepareUserWallData(){
+     
         vkLogic.requestWallRecoders(tokenKey: VKSdk.accessToken().accessToken) { (data, err) in
             guard let dataIN = data?.response?.items else{return}
             for eachRecord in dataIN{
                 self.ssd.append((eachRecord?.text)!)
-                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             print(eachRecord?.text)
+                
             }
-            
-        }
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            return
         }
     }
   
