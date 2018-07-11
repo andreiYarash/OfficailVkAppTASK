@@ -10,6 +10,7 @@
 		5D4C25AD5DC592EA3C749696 /* Pods_VkApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE521556F157C5041345773F /* Pods_VkApplicationTests.framework */; };
 		99F83EA272D729B028F4A7C8 /* Pods_VkApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264BC74CB1E16DADB6450B06 /* Pods_VkApplication.framework */; };
 		A9381F1F20F258E500FD1793 /* VkLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9381F1E20F258E500FD1793 /* VkLogic.swift */; };
+		A94F7B3420F4FB4500217990 /* VkStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */; };
 		A9F7DB4B20F15A1D00F870AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */; };
 		A9F7DB4D20F15A1D00F870AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7DB4C20F15A1D00F870AC /* ViewController.swift */; };
 		A9F7DB5020F15A1D00F870AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F7DB4E20F15A1D00F870AC /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		4DE5E91A1E22862C783765A4 /* Pods-VkApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkApplication/Pods-VkApplication.release.xcconfig"; sourceTree = "<group>"; };
 		A9381F1E20F258E500FD1793 /* VkLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkLogic.swift; sourceTree = "<group>"; };
 		A9381F2320F2971600FD1793 /* VkApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VkApplication.entitlements; sourceTree = "<group>"; };
+		A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkStatisticsViewController.swift; sourceTree = "<group>"; };
 		A9F7DB4720F15A1D00F870AC /* VkApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F7DB4C20F15A1D00F870AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +112,9 @@
 				A9381F2320F2971600FD1793 /* VkApplication.entitlements */,
 				A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */,
 				A9F7DB4C20F15A1D00F870AC /* ViewController.swift */,
-				A9F7DB4E20F15A1D00F870AC /* Main.storyboard */,
+				A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */,
 				A9381F1E20F258E500FD1793 /* VkLogic.swift */,
+				A9F7DB4E20F15A1D00F870AC /* Main.storyboard */,
 				A9F7DB5420F15A2000F870AC /* Assets.xcassets */,
 				A9F7DB5620F15A2000F870AC /* LaunchScreen.storyboard */,
 				A9F7DB5920F15A2000F870AC /* Info.plist */,
@@ -361,6 +364,7 @@
 				A9F7DB5320F15A1D00F870AC /* VkApplication.xcdatamodeld in Sources */,
 				A9F7DB4B20F15A1D00F870AC /* AppDelegate.swift in Sources */,
 				A9381F1F20F258E500FD1793 /* VkLogic.swift in Sources */,
+				A94F7B3420F4FB4500217990 /* VkStatisticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
