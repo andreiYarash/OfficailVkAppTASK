@@ -10,45 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VkApplication/ViewController.swift"
-            timestampString = "553042297.327374"
+            timestampString = "553128287.9549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "prepareVkServices()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VkApplication.ViewController.prepareVkServices() -&gt; ()"
-                  moduleName = "VkApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/ViewController.swift"
-                  timestampString = "553042298.003219"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "320">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.VKAuthorizationState, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VkApplication.ViewController.prepareVkServices() -&gt; ()"
-                  moduleName = "VkApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/ViewController.swift"
-                  timestampString = "553042298.006317"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,45 +26,14 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VkApplication/VkLogic.swift"
-            timestampString = "553042297.3275549"
+            timestampString = "553132334.789887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "requestWallRecoders(tokenKey:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VkApplication/VkLogic.swift"
-            timestampString = "553042297.327674"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "requestWallRecoders(tokenKey:completionHandler:)"
             landmarkType = "7">
             <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VkApplication.VkLogic.requestWallRecoders(tokenKey: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;VkApplication.VkLogic.LogicWallJsonData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "VkApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/VkLogic.swift"
-                  timestampString = "553042298.0187581"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "620">
-               </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
@@ -105,12 +42,27 @@
                   moduleName = "VkApplication"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/VkLogic.swift"
-                  timestampString = "553042298.021515"
+                  timestampString = "553131711.353731"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
                   offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VkApplication.VkLogic.requestWallRecoders(tokenKey: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;VkApplication.VkLogic.LogicWallJsonData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "VkApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/VkLogic.swift"
+                  timestampString = "553131711.3562731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "48">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -122,13 +74,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VkApplication/VkLogic.swift"
-            timestampString = "553042297.327785"
+            timestampString = "553132334.78997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "requestWallRecoders(tokenKey:completionHandler:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VkApplication/VkLogic.swift"
+            timestampString = "553132334.79004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "requestWallRecoders(tokenKey:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VkApplication.VkLogic.requestWallRecoders(tokenKey: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;VkApplication.VkLogic.LogicWallJsonData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "VkApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/VkLogic.swift"
+                  timestampString = "553131711.370885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VkApplication.VkLogic.requestWallRecoders(tokenKey: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;VkApplication.VkLogic.LogicWallJsonData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "VkApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/VkLogic.swift"
+                  timestampString = "553131711.3733751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VkApplication.VkLogic.requestWallRecoders(tokenKey: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;VkApplication.VkLogic.LogicWallJsonData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "VkApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreiyarash/Desktop/vk/VkApplication/VkApplication/VkLogic.swift"
+                  timestampString = "553131711.375897"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,11 +153,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VkApplication/ViewController.swift"
-            timestampString = "553042297.327921"
+            timestampString = "553128287.956524"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "prepareVkServices()"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,12 +169,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VkApplication/VkStatisticsViewController.swift"
-            timestampString = "553042297.328014"
+            timestampString = "553128287.9566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "prepareUserData()"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -169,12 +184,76 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VkApplication/VkStatisticsViewController.swift"
-            timestampString = "553042297.328616"
+            filePath = "VkApplication/VkLogic.swift"
+            timestampString = "553132334.790149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "requestUserPhotos(tokenKey:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VkApplication/Wall/VkStatisticsViewController.swift"
+            timestampString = "553132334.790217"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VkApplication/Wall/VkStatisticsViewController.swift"
+            timestampString = "553132334.790644"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VkApplication/Wall/VkStatisticsViewController.swift"
+            timestampString = "553132334.7909451"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VkApplication/Wall/VkStatisticsViewController.swift"
+            timestampString = "553132334.791235"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

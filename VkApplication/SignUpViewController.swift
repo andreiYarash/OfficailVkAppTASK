@@ -2,20 +2,20 @@ import UIKit
 import SafariServices
 import VK_ios_sdk
 
-class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSafariViewControllerDelegate{
+class SignUpViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSafariViewControllerDelegate{
     
     let vkLogic = VkLogic()
+    
     @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var linkedinButton: UIButton!
+    @IBOutlet weak var instagramButton: UIButton!
+    @IBOutlet weak var vkButton: UIButton!
     
     var resultArray:[VkLogic.LogicGetJsonData.ArrayObject] = []
     private let instanceVK = VKSdk.initialize(withAppId: "6627138")
     
     func vkSdkShouldPresent(_ controller: UIViewController!) {
-        
        self.present(controller!, animated: true, completion: nil)
-        
     }
     
     func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
@@ -25,24 +25,23 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSafariVie
     
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
         
-        
         if result.token.userId != nil {
             
-            guard let tokenKey = result.token.accessToken else{return}
+            guard let tokenKey = result.token.accessToken else{ return}
             self.vkLogic.requestUserData(tokenKey: tokenKey) { (data, err) in
                 print("Result from closure is:\(data?.response)")
-                self.userName.text = data?.response[0]?.last_name
                 let bla = data?.response
                 self.resultArray.append(bla![0]!)
                 
                 print("array of data!!! :\(self.resultArray)")
             }
-               
+            
         }else{
             print("error")
         }
-        }
+    }
     
+  
     func vkSdkDidDismiss(_ controller: UIViewController!) {
        dismiss(animated: true, completion: nil)
     }
@@ -77,21 +76,51 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSafariVie
         self.prepareVkServices()
         
     }
-    @IBAction func EnterLinkedinAccount(_ sender: Any) {
-        let linkedinUrlString:String = "https://www.linkedin.com/in/ayarosh/"
-      
+    
+    @IBAction func showInstagramPage(_ sender: Any) {
+        let linkedinUrlString:String = "https://www.instagram.com/andrew_fun_official/"
+        
         if let url = URL(string: linkedinUrlString){
+            
             let linkedinVC = SFSafariViewController(url: url, entersReaderIfAvailable: true)
             linkedinVC.delegate = self
             present(linkedinVC, animated: true, completion: nil)
+            
         }else{
             print("Error enter linkedin service")
         }
         
     }
     
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        dismiss(animated: true)
+    @IBAction func showLinkedinPage(_ sender: Any) {
+        let linkedinUrlString:String = "https://www.linkedin.com/in/ayarosh/"
+      
+        if let url = URL(string: linkedinUrlString){
+            
+            let linkedinVC = SFSafariViewController(url: url, entersReaderIfAvailable: true)
+            linkedinVC.delegate = self
+            present(linkedinVC, animated: true, completion: nil)
+            
+        }else{
+            print("Error show linkedin Page")
+        }
+        
+    }
+    
+    
+    @IBAction func showVkPage(_ sender: Any) {
+        let linkedinUrlString:String = "https://vk.com/it_area"
+        
+        if let url = URL(string: linkedinUrlString){
+            
+            let linkedinVC = SFSafariViewController(url: url, entersReaderIfAvailable: true)
+            linkedinVC.delegate = self
+            present(linkedinVC, animated: true, completion: nil)
+            
+        }else{
+            print("Error show Vk Page")
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -103,8 +132,12 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSafariVie
         //Custom Button View
         signInButton.layer.cornerRadius = 20
         signInButton.clipsToBounds = true
-        linkedinButton.layer.cornerRadius = 22
+        linkedinButton.layer.cornerRadius = 20
         linkedinButton.clipsToBounds = true
+        vkButton.layer.cornerRadius = 20
+        vkButton.clipsToBounds = true
+        instagramButton.layer.cornerRadius = 20
+        instagramButton.clipsToBounds = true
         
         //Check Authorization
         VKSdk.wakeUpSession(["email","offline","friends"]) { (state, err) in
