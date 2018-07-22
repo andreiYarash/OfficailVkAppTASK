@@ -1,11 +1,3 @@
-//
-//  VkStatisticsViewController.swift
-//  VkApplication
-//
-//  Created by Andrei Yarash on 7/10/18.
-//  Copyright © 2018 Andrei Yarash. All rights reserved.
-//
-
 import UIKit
 import VK_ios_sdk
 class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
@@ -17,17 +9,17 @@ class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITable
     @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     
-    private let vkLogic = VkLogic()
+    private let vkLogic = PrivateUserVkLogic()
     private var arrayOfWallRecords:[String] = []
     
-    private var dataForTableView:[[VkLogic.LogicWallJsonData.ArrayItems]] = []
+    private var dataForTableView:[[PrivateUserVkLogic.LogicWallJsonData.ArrayItems]] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfWallRecords.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        cell?.textLabel?.text = self.arrayOfWallRecords[indexPath.row]
+        cell?.textLabel?.text = arrayOfWallRecords[indexPath.row]
         
         return cell!
     }
@@ -37,16 +29,19 @@ class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITable
         let vc:UIAlertController = UIAlertController(title: "Log out of VK Account?", message: nil, preferredStyle: .alert)
         let viewActonFirst = UIAlertAction(title: "Log Out", style: .default) { (action) in
              VKSdk.forceLogout()
-            self.dismiss(animated: true, completion: {
-                self.performSegue(withIdentifier: "LogOut", sender: self)
-            })
+             // MARK: Set value for UserDefault Key
+            UserDefaults.standard.set(false, forKey: SignUpKeysItems.loginKeyUserDefaults.isLoginKey)
+            self.performSegue(withIdentifier: "LogOut", sender: self)
+          // Switcher.rootViewController()
            
+      
         }
         let viewActionSecond = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         vc.addAction(viewActonFirst)
         vc.addAction(viewActionSecond)
         
         present(vc, animated: true, completion: nil)
+        
         
     }
   
@@ -97,18 +92,13 @@ class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITable
         }
     }
     
-    func prepareUserPhotos(){
-        vkLogic.requestUserPhotos(tokenKey: VKSdk.accessToken().accessToken) { (data, err) in
-       
-        }
-    }
+    
    
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUserWallData()
         prepareUserData()
         prepareVkSession()
-        prepareUserPhotos()
         
         //Custom Button
         logOut.layer.cornerRadius = 18

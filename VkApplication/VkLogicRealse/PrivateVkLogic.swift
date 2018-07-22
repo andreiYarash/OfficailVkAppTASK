@@ -2,7 +2,7 @@ import Foundation
 import VK_ios_sdk
 
 
-final class VkLogic{
+final class PrivateUserVkLogic{
 
     struct LogicGetJsonData:Decodable{
         
@@ -11,7 +11,7 @@ final class VkLogic{
             let first_name:String?
             let last_name:String?
         }
-        
+       
         let response:[ArrayObject?]
         
     }

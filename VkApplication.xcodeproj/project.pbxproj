@@ -10,8 +10,14 @@
 		5D4C25AD5DC592EA3C749696 /* Pods_VkApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE521556F157C5041345773F /* Pods_VkApplicationTests.framework */; };
 		99F83EA272D729B028F4A7C8 /* Pods_VkApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264BC74CB1E16DADB6450B06 /* Pods_VkApplication.framework */; };
 		A92FE65420F8165B0035C748 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FE65320F8165B0035C748 /* UserViewController.swift */; };
-		A9381F1F20F258E500FD1793 /* VkLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9381F1E20F258E500FD1793 /* VkLogic.swift */; };
+		A9381F1F20F258E500FD1793 /* PrivateVkLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9381F1E20F258E500FD1793 /* PrivateVkLogic.swift */; };
 		A94F7B3420F4FB4500217990 /* VkStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */; };
+		A97522302104B7BE007875EA /* SignUpItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975222F2104B7BE007875EA /* SignUpItems.swift */; };
+		A981EE7820F9063200091D5F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A981EE7720F9063200091D5F /* InfoViewController.swift */; };
+		A981EE7B20F9075300091D5F /* UserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A981EE7A20F9075200091D5F /* UserInfoView.xib */; };
+		A981EE7D20F907CB00091D5F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A981EE7C20F907CB00091D5F /* UserInfoView.swift */; };
+		A9CFF99B20FD307300582DC4 /* PublicVkLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CFF99A20FD307300582DC4 /* PublicVkLogic.swift */; };
+		A9D9033221033CC700426162 /* UserWallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9033121033CC700426162 /* UserWallTableViewController.swift */; };
 		A9F7DB4B20F15A1D00F870AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */; };
 		A9F7DB4D20F15A1D00F870AC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7DB4C20F15A1D00F870AC /* SignUpViewController.swift */; };
 		A9F7DB5020F15A1D00F870AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F7DB4E20F15A1D00F870AC /* Main.storyboard */; };
@@ -37,9 +43,15 @@
 		264BC74CB1E16DADB6450B06 /* Pods_VkApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VkApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE5E91A1E22862C783765A4 /* Pods-VkApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkApplication/Pods-VkApplication.release.xcconfig"; sourceTree = "<group>"; };
 		A92FE65320F8165B0035C748 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		A9381F1E20F258E500FD1793 /* VkLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkLogic.swift; sourceTree = "<group>"; };
+		A9381F1E20F258E500FD1793 /* PrivateVkLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateVkLogic.swift; sourceTree = "<group>"; };
 		A9381F2320F2971600FD1793 /* VkApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VkApplication.entitlements; sourceTree = "<group>"; };
 		A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkStatisticsViewController.swift; sourceTree = "<group>"; };
+		A975222F2104B7BE007875EA /* SignUpItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpItems.swift; sourceTree = "<group>"; };
+		A981EE7720F9063200091D5F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A981EE7A20F9075200091D5F /* UserInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoView.xib; sourceTree = "<group>"; };
+		A981EE7C20F907CB00091D5F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		A9CFF99A20FD307300582DC4 /* PublicVkLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicVkLogic.swift; sourceTree = "<group>"; };
+		A9D9033121033CC700426162 /* UserWallTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWallTableViewController.swift; sourceTree = "<group>"; };
 		A9F7DB4720F15A1D00F870AC /* VkApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F7DB4C20F15A1D00F870AC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +108,49 @@
 			path = Wall;
 			sourceTree = "<group>";
 		};
+		A97522312104C170007875EA /* TableViewWallRecords */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9033121033CC700426162 /* UserWallTableViewController.swift */,
+			);
+			path = TableViewWallRecords;
+			sourceTree = "<group>";
+		};
+		A981EE7320F8D49900091D5F /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				A9F7DB4C20F15A1D00F870AC /* SignUpViewController.swift */,
+				A975222F2104B7BE007875EA /* SignUpItems.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		A981EE7620F905AE00091D5F /* Request User Info */ = {
+			isa = PBXGroup;
+			children = (
+				A981EE7720F9063200091D5F /* InfoViewController.swift */,
+			);
+			path = "Request User Info";
+			sourceTree = "<group>";
+		};
+		A981EE7920F9074000091D5F /* view XibFile */ = {
+			isa = PBXGroup;
+			children = (
+				A981EE7A20F9075200091D5F /* UserInfoView.xib */,
+				A981EE7C20F907CB00091D5F /* UserInfoView.swift */,
+			);
+			path = "view XibFile";
+			sourceTree = "<group>";
+		};
+		A9CFF99920FD2D7C00582DC4 /* VkLogicRealse */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFF99A20FD307300582DC4 /* PublicVkLogic.swift */,
+				A9381F1E20F258E500FD1793 /* PrivateVkLogic.swift */,
+			);
+			path = VkLogicRealse;
+			sourceTree = "<group>";
+		};
 		A9F7DB3E20F15A1D00F870AC = {
 			isa = PBXGroup;
 			children = (
@@ -119,12 +174,15 @@
 		A9F7DB4920F15A1D00F870AC /* VkApplication */ = {
 			isa = PBXGroup;
 			children = (
-				A92FE65220F815730035C748 /* Wall */,
+				A981EE7920F9074000091D5F /* view XibFile */,
+				A9CFF99920FD2D7C00582DC4 /* VkLogicRealse */,
 				A9381F2320F2971600FD1793 /* VkApplication.entitlements */,
+				A981EE7620F905AE00091D5F /* Request User Info */,
+				A97522312104C170007875EA /* TableViewWallRecords */,
+				A981EE7320F8D49900091D5F /* Sign Up */,
+				A92FE65220F815730035C748 /* Wall */,
 				A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */,
-				A9F7DB4C20F15A1D00F870AC /* SignUpViewController.swift */,
 				A92FE65320F8165B0035C748 /* UserViewController.swift */,
-				A9381F1E20F258E500FD1793 /* VkLogic.swift */,
 				A9F7DB4E20F15A1D00F870AC /* Main.storyboard */,
 				A9F7DB5420F15A2000F870AC /* Assets.xcassets */,
 				A9F7DB5620F15A2000F870AC /* LaunchScreen.storyboard */,
@@ -249,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A981EE7B20F9075300091D5F /* UserInfoView.xib in Resources */,
 				A9F7DB5820F15A2000F870AC /* LaunchScreen.storyboard in Resources */,
 				A9F7DB5520F15A2000F870AC /* Assets.xcassets in Resources */,
 				A9F7DB5020F15A1D00F870AC /* Main.storyboard in Resources */,
@@ -371,11 +430,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A981EE7D20F907CB00091D5F /* UserInfoView.swift in Sources */,
 				A9F7DB4D20F15A1D00F870AC /* SignUpViewController.swift in Sources */,
+				A9D9033221033CC700426162 /* UserWallTableViewController.swift in Sources */,
+				A9CFF99B20FD307300582DC4 /* PublicVkLogic.swift in Sources */,
 				A92FE65420F8165B0035C748 /* UserViewController.swift in Sources */,
 				A9F7DB5320F15A1D00F870AC /* VkApplication.xcdatamodeld in Sources */,
 				A9F7DB4B20F15A1D00F870AC /* AppDelegate.swift in Sources */,
-				A9381F1F20F258E500FD1793 /* VkLogic.swift in Sources */,
+				A97522302104B7BE007875EA /* SignUpItems.swift in Sources */,
+				A9381F1F20F258E500FD1793 /* PrivateVkLogic.swift in Sources */,
+				A981EE7820F9063200091D5F /* InfoViewController.swift in Sources */,
 				A94F7B3420F4FB4500217990 /* VkStatisticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
