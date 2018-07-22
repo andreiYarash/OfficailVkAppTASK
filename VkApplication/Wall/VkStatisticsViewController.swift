@@ -86,20 +86,15 @@ class VkStatisticsViewController: UIViewController,UITableViewDataSource,UITable
                 }else{
                     print("No text")
                 }
-                
-                
             }
         }
     }
-    
-    
    
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUserWallData()
         prepareUserData()
         prepareVkSession()
-        
         //Custom Button
         logOut.layer.cornerRadius = 18
         logOut.clipsToBounds = true

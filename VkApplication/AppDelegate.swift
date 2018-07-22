@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 import CoreData
 import VK_ios_sdk
 
@@ -11,6 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Switcher.rootViewController()
         Thread.sleep(forTimeInterval: 1.5)
+        
+        FirebaseApp.configure()
+        
         return true
     }
     
@@ -67,18 +71,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
     // MARK: - Vk Delegate Method
+
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         VKSdk.processOpen(url, fromApplication: options[.sourceApplication] as! String)
         return true
     }
  
-    
-    
-    
-
-    
-
     // MARK: - Core Data Saving support
 
     func saveContext () {

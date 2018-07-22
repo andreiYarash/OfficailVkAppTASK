@@ -8,6 +8,9 @@ target 'VkApplication' do
   # Pods for VkApplication
 
 	pod "VK-ios-sdk"
+    pod 'Firebase/Core'
+    pod 'Fabric'
+    pod 'Crashlytics'
 
   target 'VkApplicationTests' do
     inherit! :search_paths

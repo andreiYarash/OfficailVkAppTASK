@@ -23,10 +23,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amq-Fo-G1E">
-                                <rect key="frame" x="57.5" y="434" width="260" height="90"/>
+                                <rect key="frame" x="58" y="474" width="260" height="50"/>
                                 <color key="backgroundColor" red="0.22535534072939664" green="0.36766291303514731" blue="0.69674016497461921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="8Zh-IT-ZMI"/>
+                                    <constraint firstAttribute="height" constant="50" id="8Zh-IT-ZMI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="kUI-oX-vLz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="-51"/>
+            <point key="canvasLocation" x="1525.5999999999999" y="-51.724137931034484"/>
         </scene>
         <!--VkStatic-->
         <scene sceneID="DBm-AZ-8Z1">
