@@ -14,6 +14,7 @@
 		A94F7B3420F4FB4500217990 /* VkStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */; };
 		A97522302104B7BE007875EA /* SignUpItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975222F2104B7BE007875EA /* SignUpItems.swift */; };
 		A97522332104EA56007875EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97522322104EA56007875EA /* GoogleService-Info.plist */; };
+		A975223521052BFC007875EA /* VKTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975223421052BFC007875EA /* VKTabBarController.swift */; };
 		A981EE7820F9063200091D5F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A981EE7720F9063200091D5F /* InfoViewController.swift */; };
 		A981EE7B20F9075300091D5F /* UserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A981EE7A20F9075200091D5F /* UserInfoView.xib */; };
 		A981EE7D20F907CB00091D5F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A981EE7C20F907CB00091D5F /* UserInfoView.swift */; };
@@ -49,6 +50,7 @@
 		A94F7B3320F4FB4500217990 /* VkStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkStatisticsViewController.swift; sourceTree = "<group>"; };
 		A975222F2104B7BE007875EA /* SignUpItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpItems.swift; sourceTree = "<group>"; };
 		A97522322104EA56007875EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A975223421052BFC007875EA /* VKTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKTabBarController.swift; sourceTree = "<group>"; };
 		A981EE7720F9063200091D5F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		A981EE7A20F9075200091D5F /* UserInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoView.xib; sourceTree = "<group>"; };
 		A981EE7C20F907CB00091D5F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				A9F7DB4A20F15A1D00F870AC /* AppDelegate.swift */,
 				A92FE65320F8165B0035C748 /* UserViewController.swift */,
 				A9F7DB4E20F15A1D00F870AC /* Main.storyboard */,
+				A975223421052BFC007875EA /* VKTabBarController.swift */,
 				A9F7DB5420F15A2000F870AC /* Assets.xcassets */,
 				A9F7DB5620F15A2000F870AC /* LaunchScreen.storyboard */,
 				A97522322104EA56007875EA /* GoogleService-Info.plist */,
@@ -446,6 +449,7 @@
 				A9F7DB5320F15A1D00F870AC /* VkApplication.xcdatamodeld in Sources */,
 				A9F7DB4B20F15A1D00F870AC /* AppDelegate.swift in Sources */,
 				A97522302104B7BE007875EA /* SignUpItems.swift in Sources */,
+				A975223521052BFC007875EA /* VKTabBarController.swift in Sources */,
 				A9381F1F20F258E500FD1793 /* PrivateVkLogic.swift in Sources */,
 				A981EE7820F9063200091D5F /* InfoViewController.swift in Sources */,
 				A94F7B3420F4FB4500217990 /* VkStatisticsViewController.swift in Sources */,

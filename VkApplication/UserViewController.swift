@@ -2,6 +2,7 @@ import UIKit
 
 class UserViewController: UIViewController,UITextFieldDelegate {
     
+    @IBOutlet weak var profilePhoto: UIImageView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var userDataSwitcher: UISwitch!
     @IBOutlet weak var wallDataSwitcher: UISwitch!
