@@ -22,7 +22,7 @@ final class PublicVkLogic{
         
         let response:InnerItems
     }
-    private let serviceVkKey:String = "f57c64cff57c64cff57c64cfadf5197b8dff57cf57c64cfae3d78bdb68adb6129a9e1f8"
+    private let serviceVkKey:String = "YOur_Service_Key"
     
     func requestUserPhotos(tokenKey:String?,completionHandler:@escaping (LogicUserPhotosJsonData?,Error?)->Void){
         var urlString:String = "https://api.vk.com/method/photos.get?profile&access_token="
