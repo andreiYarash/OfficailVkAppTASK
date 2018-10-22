@@ -12,7 +12,7 @@ class SignUpViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate,SFSaf
     @IBOutlet weak var vkButton: UIButton!
     
     var resultArray:[PrivateUserVkLogic.LogicGetJsonData.ArrayObject] = []
-    private let instanceVK = VKSdk.initialize(withAppId: "6627138")
+    private let instanceVK = VKSdk.initialize(withAppId: "YOUR_APP_ID")
     
     func vkSdkShouldPresent(_ controller: UIViewController!) {
         self.present(controller!, animated: true, completion: nil)
